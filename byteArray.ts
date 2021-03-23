@@ -4,8 +4,8 @@
 export function createByteArray(x:string | BigInt): number[] {
   let hexString = x.toString(16);
   if (hexString.length % 2 > 0) hexString = "0" + hexString;
-  let byteArray = [];
-  let byteArray2 = [];
+  let byteArray: number[] = [];
+  let byteArray2: number[] = [];
   for (let i = 0; i < hexString.length; i += 2) {
     byteArray.push(parseInt(hexString.slice(i, i + 2), 16));
   };
