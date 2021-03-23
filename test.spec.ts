@@ -1,5 +1,5 @@
 import { validateAddress } from './index';
-import assert from 'assert';
+import assert = require('assert');
 
 describe('Validate', () => {
   describe('Result', () => {
