@@ -25,7 +25,7 @@ jobs:
 
       # Check the build
       - name: Install modules
-        run: npm i && npm i --save-dev
+        run: npm i --save-dev
         
       - name: Run the test
         run: npm test
