@@ -22,10 +22,3 @@ this package requires Node 11.6+
 ```validateAddress("soMeBtCAddresSHEre");```
 <br/>
 returns true for valid bitcoin addresses
-<p align="center">
-  <a target="_blank" rel="noopener noreferrer" href="https://tiphub.io/user/1186002563/tip?site=github">
-    <img src="https://tiphub.io/static/images/tip-button-light.png" alt="Tip callmekurisu on TipHub" height="60">
-    <br />
-    My pubkey starts with <code>028eab9c</code>
-  </a>
-</p>
