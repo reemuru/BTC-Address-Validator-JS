@@ -1,6 +1,5 @@
-'use strict'
 import { validateAddress } from './index';
-const assert = require('assert');
+import { strict as assert } from 'assert';
 
 describe('Validate', () => {
   describe('Result', () => {
