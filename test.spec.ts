@@ -1,4 +1,3 @@
-'use strict'
 import { validateAddress } from './index';
 const assert = require('assert');
 
