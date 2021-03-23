@@ -21,7 +21,8 @@
   "dependencies": {
     "js-sha256": "^0.9.0",
     "mocha": "^8.3.2",
-    "ts-node": "^9.1.1"
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.2"
