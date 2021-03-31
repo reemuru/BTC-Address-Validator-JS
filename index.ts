@@ -9,13 +9,9 @@ export function validateAddress(addy:string): boolean {
   // Check length of address
   const result = addy.length < 26 || addy.length > 35 ? false : true;
   // Verify decoded address !null
-  if(!result){
-    console.error("Invalid address length");
-  }
+  if(!result){ console.error("Invalid address length"); }
   const decoded = decodeBase58To25(addy);
-  if (decoded === null){
-    console.error("Invalid address type");
-  }
+  if (decoded === null) { console.error("Invalid address type"); }
   // Hash decoded element 0-21
   // Hash that hash
   // Check if second hash elements 0-4 match decoded 21, 25
@@ -24,7 +20,5 @@ export function validateAddress(addy:string): boolean {
   const hash2 = sha256(h1ByteArray);
   const hash2ByteArray = createByteArray(hash2);
   // If address is not valid show error in console
-  const output = hash2ByteArray.slice(0,4).toString() === decoded.slice(21,25).toString() ?
-  true : false;
-  return output;
+  return hash2ByteArray.slice(0,4).toString() === decoded.slice(21,25).toString();
 };
