@@ -27,6 +27,7 @@ export function decodeBase58To25(input: string): number[] {
    * This array should be 24 or 25 in length
    * If it is 25, gtg
    * If its 24 remove undefined and insert 0 at the beginning
+   *
    */
   if (numBytes.length < 25) {
     result.pop();
