@@ -1,5 +1,7 @@
 /**
  * Conversion to Byte Array
+ * @param x - input
+ * @returns - array of bytes
  */
 export function createByteArray(x:string | BigInt): number[] {
   let hexString = x.toString(16);
